@@ -5,11 +5,11 @@ const { Pool } = require('pg');
 const app = express();
 const port = 3000;
 const pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'assignment',
-    password: 'rajeev@07',
-    port: 5432,
+    user: process.env.PGUSER,
+    host: process.env.PGHOST,
+    database: process.env.PGDATABASE,
+    password: process.env.PGPASSWORD,
+    port: process.env.PGPORT,
 });
 app.use(express.static('public'));
 async function fetchData() {
