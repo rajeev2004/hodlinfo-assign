@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const { Pool } = require('pg');
-
+require('dotenv').config();
 const app = express();
 const port = 3000;
 const pool = new Pool({
