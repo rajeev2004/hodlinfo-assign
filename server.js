@@ -10,6 +10,9 @@ const pool = new Pool({
     database: process.env.PGDATABASE,
     password: process.env.PGPASSWORD,
     port: process.env.PGPORT,
+    ssl: {
+        rejectUnauthorized: false 
+      }
 });
 app.use(express.static('public'));
 async function fetchData() {
