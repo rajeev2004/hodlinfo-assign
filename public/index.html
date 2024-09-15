@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HODLINFO</h1>
+        <button class="telegram-btn" id="connect-telegram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="telegram-icon">
+            Connect Telegram
+        </button>
+    </header>
+    <main>
+        <section id="crypto-info">
+            <div class="button-container">
+                <button id="inr-button">INR</button>
+                <div class="dropdown">
+                    <button id="dropdown-button">Select Crypto</button>
+                    <div class="dropdown-menu">
+                        <a href="#" data-crypto="BTC">BTC</a>
+                        <a href="#" data-crypto="ETH">ETH</a>
+                        <a href="#" data-crypto="USDT">USDT</a>
+                        <a href="#" data-crypto="XRP">XRP</a>
+                        <a href="#" data-crypto="TRX">TRX</a>
+                        <a href="#" data-crypto="DASH">DASH</a>
+                        <a href="#" data-crypto="ZEC">ZEC</a>
+                        <a href="#" data-crypto="XEM">XEM</a>
+                        <a href="#" data-crypto="IOST">IOST</a>
+                        <a href="#" data-crypto="WIN">WIN</a>
+                        <a href="#" data-crypto="BTT">BTT</a>
+                        <a href="#" data-crypto="WRX">WRX</a>
+                    </div>
+                </div>
+                <button id="buy-button" onclick="window.location.href='https://wazirx.com/signup';">BUY</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Last</th>
+                        <th>Buy</th>
+                        <th>Sell</th>
+                        <th>Volume</th>
+                        <th>Base Unit</th>
+                    </tr>
+                </thead>
+                <tbody id="crypto-table-body">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <div id="telegram-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Connect Telegram</h2>
+            <p><strong>Add bot to your group</strong></p>
+            <p><strong>Manual:</strong></p>
+            <ol>
+                <li>Open the telegram app.</li>
+                <li>Open the group you want to add the bot to.</li>
+                <li>Click on add members in group settings.</li>
+                <li>Search @HodlInfoBot and click it.</li>
+            </ol>
+            <p><strong>Automatic:</strong></p>
+            <p>Go to: <a href="https://t.me/HodlInfoBot?startgroup=true" target="_blank">https://t.me/HodlInfoBot?startgroup=true</a></p>
+            <p><strong>Chat with the bot</strong></p>
+            <p><strong>Manual:</strong></p>
+            <ol>
+                <li>Open the telegram app.</li>
+                <li>Click on new message button.</li>
+                <li>In search bar type HodlInfoBot.</li>
+                <li>Click on @HodlInfoBot.</li>
+            </ol>
+            <p><strong>Automatic:</strong></p>
+            <p>Go to: <a href="https://t.me/HodlInfoBot" target="_blank">https://t.me/HodlInfoBot</a></p>
+        </div>
+    </div>
+    <footer>
+        <button class="add-btn">Add hodlinfo to home screen</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
